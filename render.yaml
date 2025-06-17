@@ -3,15 +3,14 @@ services:
     name: n8n
     env: docker
     plan: free
-    repo: https://github.com/JUICEMM/moltiai
     branch: main
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
+        value: "true"
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: Molti96003146
+        value: Moltiai96003146
       - key: WEBHOOK_URL
-        value: https://your-n8n-name.onrender.com/
+        value: https://n8n-htk8.onrender.com/
